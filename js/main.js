@@ -2,12 +2,22 @@
 
 const { createApp } = Vue;
 
+/////////////
+// To Do List
+/////////////
 const app = createApp({
     data() {
         return {
+            // Page title
             title: 'The Boolean Academy To Do List',
+
+            // Completed tasks
             done: 'text-decoration-line-through',
+
+            // Add new task
             newTask: '',
+
+            // List
             toDoList: [
                 {
                     text: 'Imparare a utilizzare VueJS',
@@ -41,9 +51,12 @@ const app = createApp({
         }
     },
     methods: {
+        // Remove tasks
         remove(index) {
             this.toDoList.splice(index, 1);
         },
+
+        // Add new tasks
         addTask() {
             if(this.newTask.trim() !== '') {
                 const addedTask = {
