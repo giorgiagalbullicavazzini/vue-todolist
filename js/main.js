@@ -7,6 +7,7 @@ const app = createApp({
         return {
             title: 'The Boolean Academy To Do List',
             done: 'text-decoration-line-through',
+            newTask: '',
             toDoList: [
                 {
                     text: 'Imparare a utilizzare VueJS',
@@ -42,6 +43,17 @@ const app = createApp({
     methods: {
         remove(index) {
             this.toDoList.splice(index, 1);
+        },
+        addTask() {
+            if(this.newTask.trim() !== '') {
+                const addedTask = {
+                    text: this.newTask,
+                    done: false,
+                }
+    
+                this.toDoList.push(addedTask);
+                this.newTask = '';    
+            }
         }
     }
 }).mount('#app');
