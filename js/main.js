@@ -6,10 +6,11 @@ const app = createApp({
     data() {
         return {
             title: 'The Boolean Academy To Do List',
+            done: 'text-decoration-line-through',
             toDoList: [
                 {
                     text: 'Imparare a utilizzare VueJS',
-                    done: false,
+                    done: true,
                 },
                 {
                     text: 'Iniziare a studiare il backend',

@@ -17,10 +17,15 @@
 <body>
     <!-- To Do List -->
     <div id="app" class="container" v-cloak>
+        <!-- Page title -->
         <h1 class="my-5 text-center">{{ title }}</h1>
-        <ol class="mx-auto list-group">
-            <li v-for="toDo in toDoList" class="list-group-item d-flex justify-content-between">{{ toDo.text }}</li>
-        </ol>
+        <!-- // Page title -->
+
+        <!-- List -->
+        <ul class="mx-auto list-group">
+            <li v-for="(toDo, index) in toDoList" :class="{ 'text-decoration-line-through': toDoList[index].done }" class="list-group-item d-flex justify-content-between">{{ toDo.text }}</li>
+        </ul>
+        <!-- // List -->
     </div>
     <!-- // To Do List -->
 
