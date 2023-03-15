@@ -21,7 +21,7 @@ const app = createApp({
             toDoList: [
                 {
                     text: 'Imparare a utilizzare VueJS',
-                    done: true,
+                    done: false,
                 },
                 {
                     text: 'Iniziare a studiare il backend',
