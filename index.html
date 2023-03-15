@@ -16,19 +16,19 @@
 
 <body>
     <!-- To Do List -->
-    <div id="app" class="container">
-        <h1 class="my-5 text-center">To Do List</h1>
+    <div id="app" class="container" v-cloak>
+        <h1 class="my-5 text-center">{{ title }}</h1>
         <ol class="mx-auto list-group">
-            <li class="list-group-item">An item</li>
+            <li class="list-group-item">{{ toDoList[0] }}</li>
         </ol>
     </div>
     <!-- // To Do List -->
 
-    <!-- JS -->
-    <script src="js/main.js"></script>
-
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
