@@ -27,7 +27,7 @@
         <div class="container to-do-list">
             <!-- Add tasks to the list -->
             <div class="input-group mb-4">
-                <input v-model="newTask" type="text" class="form-control" placeholder="Inserisci le cose da fare" aria-label="Inserisci le cose da fare" aria-describedby="button-addon2">
+                <input @keyup.enter="addTask" v-model="newTask" type="text" class="form-control" placeholder="Inserisci le cose da fare" aria-label="Inserisci le cose da fare" aria-describedby="button-addon2">
                 <button @click="addTask" class="btn btn-outline-secondary" type="button" id="button-addon2">Aggiungi</button>
             </div>
             <!-- // Add tasks to the list -->
