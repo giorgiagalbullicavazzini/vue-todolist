@@ -8,7 +8,27 @@ const app = createApp({
             title: 'La mia To Do List',
             toDoList: [
                 {
-                    text: 'Andare a fare la spesa',
+                    text: 'Imparare a utilizzare VueJS',
+                    done: false,
+                },
+                {
+                    text: 'Iniziare a studiare il backend',
+                    done: false,
+                },
+                {
+                    text: 'Realizzare il progetto finale',
+                    done: false,
+                },
+                {
+                    text: 'Iniziare il career service',
+                    done: false,
+                },
+                {
+                    text: 'Realizzare il primo portfolio',
+                    done: false,
+                },
+                {
+                    text: 'Iniziare a lavorare come web developer',
                     done: false,
                 }
             ]
