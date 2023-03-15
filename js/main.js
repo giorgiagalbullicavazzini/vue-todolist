@@ -5,7 +5,7 @@ const { createApp } = Vue;
 const app = createApp({
     data() {
         return {
-            title: 'La mia To Do List',
+            title: 'The Boolean Academy To Do List',
             toDoList: [
                 {
                     text: 'Imparare a utilizzare VueJS',
@@ -13,6 +13,10 @@ const app = createApp({
                 },
                 {
                     text: 'Iniziare a studiare il backend',
+                    done: false,
+                },
+                {
+                    text: 'Imparare a gestire il lato backend e affinare le abilità relative a quello frontend',
                     done: false,
                 },
                 {
