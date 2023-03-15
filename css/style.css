@@ -9,3 +9,13 @@
     margin: 0;
     padding: 0;
 }
+
+/*
+=============
+ To Do List
+=============
+*/
+
+ol {
+    max-width: 37.5rem;
+}
