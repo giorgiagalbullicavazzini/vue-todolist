@@ -38,5 +38,10 @@ const app = createApp({
                 }
             ]
         }
+    },
+    methods: {
+        remove(index) {
+            this.toDoList.splice(index, 1);
+        }
     }
 }).mount('#app');
