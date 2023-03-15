@@ -67,6 +67,15 @@ const app = createApp({
                 this.toDoList.push(addedTask);
                 this.newTask = '';    
             }
+        },
+
+        // Toggle done true or false
+        toggleDone(index) {
+            if(this.toDoList[index].done === false) {
+                this.toDoList[index].done = true;
+            } else {
+                this.toDoList[index].done = false;
+            }
         }
     }
 }).mount('#app');

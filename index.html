@@ -32,10 +32,10 @@
             </div>
             <!-- // Add tasks to the list -->
     
-            <!-- List -->
+            <!-- List --> 
             <ul class="mx-auto list-group">
                 <li v-for="(toDo, index) in toDoList" :class="{ 'text-decoration-line-through': toDoList[index].done }" class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="text">{{ toDo.text }}</div>
+                    <div @click="toggleDone(index)" class="text">{{ toDo.text }}</div>
 
                     <!-- Remove tasks from the list -->
                     <div @click="remove(index)" role="button" class="cross">
